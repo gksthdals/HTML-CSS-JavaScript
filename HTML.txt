@@ -1,0 +1,72 @@
+## tags
+
+### p
+p -> paragraph
+
+### LIST
+ol -> ordered list : type='1', 'a', 'A', 'i', 'I'
+  li -> list
+ul -> unordered list
+
+### TABLE
+td -> th : 강조
+<table>
+  <caption>표 제목</caption>
+  <tr>
+    <td>1행 1열</td>
+    <td>1행 2열</td>
+  </tr>
+  <tr>
+    <td>2행 1열</td>
+    <td>2행 2열</td>
+  </tr>
+</table>
+
+### IMAGE & AUDIO & VIDEO
+<img src="이미지 파일 경로" alt="대체용 텍스트">
+
+<audio src="오디오 파일 경로" controls></audio>
+<video src="비디오 파일 경로" controls width="1024"></video>
+
+controls : 플레이어 화면에 컨트롤 바를 표시
+autoplay : 오디오나 비디오를 자동으로 실행
+loop : 오디오나 비디오를 반복 재생
+muted : 오디오나 비디오의 소리를 제거
+preload : 페이지를 불러올 때 오디오나 비디오 파일을 어떻게 로딩할 것인지 지정 -> auto, metadata, none
+width, height
+poster="파일 이름"
+
+### HYPERLINK
+<a href="링크할 주소">텍스트 또는 이미지</a>
+
+target="_blank" : 새로운 창에서 링크 열기
+
+### FORM
+- type : text, email, tel / password
+<form action="">
+  <label for="user_id">ID : </label>
+  <input type="text" id="user_id">
+
+  <label>PASSWORD : <input type="password"></label>
+</form>
+
+- type : submit
+<input type="submit" value="로그인">
+
+- type : radio, checkbox
+<input type="radio" name="name" value="value"> name이 같으면 중복 선택 불가
+
+- type : number / range
+<input type="number" min="0" max="5" value="초기값">
+
+- type : date, month, week, time, datetime-local... -> min max 사용해서 범위 제한 가능
+
+- input 태그의 주요 속성 : required, readonly, autofocus, placeholder
+
+### SELECT
+<select>
+  <option value="special_3" selected>선물용 3kg</option> -> 처음 선택되어있는 항목
+  <option value="special_5">선물용 5kg</option>
+  <option value="family_3">가정용 3kg</option>
+  <option value="family_5">가정용 3kg</option>
+</select>
